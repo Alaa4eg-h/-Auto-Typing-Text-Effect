@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 .header {
@@ -34,13 +35,45 @@ nav {
     width: 35px;
     cursor: pointer;
 }
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.btn--outline {
+    border-color: #fff724;
+    color: #fff;
+}
+.btn--outline:hover {
+    background-color: #fff724;
+    color: #333;
+}
+
+.btn--fill {
+    background-color: #fff724;
+    color: #333;
+}
+.btn--fill:hover {
+    border-color: #fff724;
+    background-color: transparent;
+    color: #fff;
+}
+
 nav ul {
     flex: 1;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     gap: 15px;
-
+    margin-right: 30px;
 }
 
 nav li {
@@ -56,4 +89,31 @@ nav a {
 
 nav a:hover {
     color: #fff724;
+}
+
+
+.text-box {
+    margin-top: 20%;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #fff724;
+}
+
+.text-box p {
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }

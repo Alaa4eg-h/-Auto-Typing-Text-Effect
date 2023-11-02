@@ -25,11 +25,11 @@
     </nav>
 
     <div class="text-box">
-        <h1>I'm Anna Amelia</h1>
+        <h1>I'm a <span class="auto-type"></span></h1>
         <p>You can reach out to me if you need any help in making a website for you or your business</p>
         <div class="header__btns">
-            <a href="#">Contact Me</a>
-            <a href="images/menu.png" download>Download Cv</a>
+            <a href="#" class="btn btn--outline">Contact Me</a>
+            <a href="images/menu.png" class="btn btn--fill" download>Download Cv</a>
         </div>
     </div>
 </div>
@@ -42,5 +42,17 @@
 
 
 <script src="js/main.js"></script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('.auto-type', {
+        strings: ['Anna Amelia', 'Freelancer','Developer',],
+       typeSpeed : 150,
+        backSpeed : 150,
+        loop: true
+    });
+
+</script>
 </body>
 </html>
